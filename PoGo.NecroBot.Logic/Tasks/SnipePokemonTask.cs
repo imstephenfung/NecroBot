@@ -350,7 +350,7 @@ namespace PoGo.NecroBot.Logic.Tasks
                 var request = WebRequest.CreateHttp(uri);
                 request.Accept = "application/json";
                 request.Method = "GET";
-                request.Timeout = 5000;
+                request.Timeout = 30000;
                 request.ReadWriteTimeout = 32000;
 
                 var resp = request.GetResponse();
